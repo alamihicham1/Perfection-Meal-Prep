@@ -1,3 +1,7 @@
-body {
-    background-color: aqua;
+:root {
+    --color-primary:#034078;
+    --color-secondary:#80ced7;
+    --color-accent: #EF6461;
+    --color-headings: #E4B363;
+    --color-body: #E0DFD5;
 }
