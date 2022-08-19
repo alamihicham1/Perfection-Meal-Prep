@@ -147,3 +147,24 @@ a {
     padding-left: 0;
   }
 }
+
+/****************************************************** Icons **************************************************************/
+
+.icon {
+  height: 40px;
+  width: 40px;
+}
+
+.icon--primary {
+  color: var(--color-primary);
+}
+
+.icon-container {
+  background: var(--color-secondary);
+  height: 64px;
+  width: 64px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
