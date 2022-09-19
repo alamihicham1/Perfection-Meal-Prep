@@ -4,7 +4,10 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Perfection Meal Prep | Tasty Yet Healthy</title>
-    <meta name="description" content="" />
+    <meta
+      name="description"
+      content="We Prep & Deliver Fresh Meals. Low Fat or Keto Options Available. Subscribe & Save. Natural & Healthy Prepared Meals Delivered To Your Door - No Commitment Required."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,72 +17,245 @@
     />
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
+    <header>
+      <nav class="nav collapsible">
+        <a class="nav__brand" href="/"
+          ><img src="/images/logo-2.svg" alt=""
+        /></a>
+        <svg class="icon icon--white nav__toggler">
+          <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#">Home</a></li>
+          <li class="nav__item"><a href="#">Services</a></li>
+          <li class="nav__item"><a href="#">About</a></li>
+          <li class="nav__item"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="block block--dark block--skewed-left hero">
+      <div class="container grid grid--1x2">
+        <header class="block__header hero__content">
+          <h1 class="block__heading">WE DO THE COOKING... YOU ENJOY LIVING</h1>
+          <p class="hero__tagline">
+            Enjoy a healthy meal that fits all sorts of lifestyles.
+          </p>
+          <a href="" class="btn btn--accent btn--stretched">Get Started</a>
+        </header>
+        <picture data-aos="flip-down">
+          <img
+            class="hero__image"
+            src="/images/New folder/background-img.png"
+            alt=""
+          />
+        </picture>
+      </div>
+    </section>
+    <section class="block container block--skewed-right">
+      <header class="block__header">
+        <h2>A hassle-free culinary experience made just for you!</h2>
+        <p>
+          Our licensed dietitian and world famous chef work together to make
+          meals that are healthy, finger-liking delicious, and custom made to
+          fit all your dietary needs.
+        </p>
+      </header>
+      <article class="grid container grid--1x2 feature">
+        <div class="feature__content" data-aos="fade-right">
+          <h3 class="feature__heading">Tracking Calories was never so easy!</h3>
+          <p>
+            We do the shopping, prepping, cooking, and packaging. Our meals are
+            fully cooked. All you need to do is heat and eat! Our menu changes
+            every week and has over 35 different meals weekly!
+          </p>
+          <a href="#" class="link-arrow">Learn More</a>
+        </div>
+        <picture>
+          <img class="feature__image" src="/images/vegs.jpg" alt="" />
+        </picture>
+      </article>
+    </section>
+    <section
+      class="block container block--dark block--skewed-left block--accent"
+    >
+      <header class="block__header">
+        <h2>Our Process is Quite Simple!</h2>
+      </header>
+      <div class="grid grid--1x3 feature">
+        <div class="feature__content">
+          <img class="feature__image-1" src="/images/order.png" alt="" />
+          <h3 class="feature__heading">Pick your Plan</h3>
+          <p>
+            Choose the meal plan of your choice from our website. After you
+            place your order, instructions will be given on how to select each
+            meal (if you wish to do so). We have over 35 different meals every
+            week Double Protein options available as well.
+          </p>
+          <a href="#" class="link-arrow">Learn More</a>
+        </div>
+        <div class="feature__content">
+          <img class="feature__image-1" src="/images/ship.png" alt="" />
+          <h3 class="feature__heading">We Cook & Deliver</h3>
+          <p>
+            Our culinary team carefully prepares, cooks, portions, and packages
+            your meals. We have a variety of delivery options available to
+            choose from at checkout. We have 25 free pick-up locations located
+            within 100 miles of Tampa, FL. We also ship to your home using Fedex
+            and UPS for a fee.
+          </p>
+          <button class="btn btn--block btn--accent">
+            See Local Pick-up Locations
+          </button>
+        </div>
+        <div class="feature__content">
+          <img class="feature__image-1" src="/images/eat.png" alt="" />
+          <h3 class="feature__heading">Heat and Enjoy!</h3>
+          <p>
+            All of our meals are fully cooked and vacuum sealed using reduced
+            oxygen packaging. Simply peel back the film and heat to your desired
+            temperature. Simply recycle containers when you are finished
+            enjoying!
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="block container block-plans block-plans--accent">
+      <header class="block-plans__header">
+        <h2>The Perfect Balance Between Tasty and Nutrious</h2>
+      </header>
+      <div class="grid grid--1x4">
+        <picture>
+          <img class="mealplan-img" src="/images/meal-1.png" alt="" />
+        </picture>
+        <picture>
+          <img class="mealplan-img" src="/images/meal-2.png" alt="" />
+        </picture>
+        <picture>
+          <img class="mealplan-img" src="/images/meal-3.png" alt=""
+        /></picture>
+        <picture>
+          <img class="mealplan-img" src="/images/meal-4.png" alt=""
+        /></picture>
+      </div>
+    </section>
+    <section class="block">
+      <header class="block__header">
+        <h2>What our Customers are Saying</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, est.</p>
+      </header>
+      <div class="container">
+        <div class="card testimonial">
+          <div class="grid grid--1x2">
+            <div class="testimonial__image">
+              <img src="/images/kitchen.jpg" alt="kitchen" />
+              <span class="icon-container icon-container--accent">
+                <svg class="icon icon--white icon--small">
+                  <use xlink:href="images/sprite.svg#quotes"></use>
+                </svg>
+              </span>
+            </div>
+
+            <div>
+              <blockquote class="quote">
+                <p class="quote__text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Maiores iure dicta facere nisi soluta beatae eveniet numquam,
+                  doloremque nihil, necessitatibus dolores, ea maxime? Repellat
+                  quisquam doloremque vel, dolore quis sapiente! Praesentium
+                  perferendis odio, excepturi alias consequuntur aperiam
+                  sapiente iste, molestiae architecto necessitatibus optio
+                  accusantium modi ut eveniet? Omnis, saepe pariatur?
+                </p>
+                <footer>
+                  <div class="media">
+                    <div class="media__image">
+                      <svg class="icon icon--primary quote__line">
+                        <use xlink:href="images/sprite.svg#line"></use>
+                      </svg>
+                    </div>
+                    <div class="media__body">
+                      <h3 class="media__title quote__author">
+                        Hicham Alami Talbi
+                      </h3>
+                      <p class="quote__organization">
+                        Loyal Customer - Dev Plus Group
+                      </p>
+                    </div>
+                  </div>
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer class="block block--dark footer">
       <div class="container grid footer__sections">
         <section class="collapsible collapsible--expanded footer__section">
           <header class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading">Item 1</h2>
+            <h2 class="collapsible__heading footer__heading">FAQ</h2>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="images/sprite.svg#chevron"></use>
             </svg>
           </header>
           <div class="collapsible__content">
             <ul class="list">
-              <li><a href="#">Nutrition</a></li>
-              <li><a href="#">Training</a></li>
-              <li><a href="#">Supplements</a></li>
-              <li><a href="#">Rest</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
             </ul>
           </div>
         </section>
         <section class="collapsible footer__section">
           <header class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading">Item 2</h2>
+            <h2 class="collapsible__heading footer__heading">Home</h2>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="images/sprite.svg#chevron"></use>
             </svg>
           </header>
           <div class="collapsible__content">
             <ul class="list">
-              <li><a href="#">Nutrition</a></li>
-              <li><a href="#">Training</a></li>
-              <li><a href="#">Supplements</a></li>
-              <li><a href="#">Rest</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Local Pick Up Locations</a></li>
+              <li><a href="#">Rewards</a></li>
             </ul>
           </div>
         </section>
         <section class="collapsible footer__section">
           <header class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading">Item 3</h2>
+            <h2 class="collapsible__heading footer__heading">Reviews</h2>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="images/sprite.svg#chevron"></use>
             </svg>
           </header>
           <div class="collapsible__content">
             <ul class="list">
-              <li><a href="#">Nutrition</a></li>
-              <li><a href="#">Training</a></li>
-              <li><a href="#">Supplements</a></li>
-              <li><a href="#">Rest</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Suppliers</a></li>
+              <li><a href="#">Colab</a></li>
             </ul>
           </div>
         </section>
         <section class="collapsible footer__section">
           <header class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading">Item 4</h2>
+            <h2 class="collapsible__heading footer__heading">
+              SIGN UP AND SAVE
+            </h2>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="images/sprite.svg#chevron"></use>
             </svg>
           </header>
           <div class="collapsible__content">
-            <ul class="list">
-              <li><a href="#">Nutrition</a></li>
-              <li><a href="#">Training</a></li>
-              <li><a href="#">Supplements</a></li>
-              <li><a href="#">Rest</a></li>
-            </ul>
+            <p>
+              Subscribe to get special offers, free giveaways, and
+              once-in-a-lifetime deals.
+            </p>
+            <div class="input-group">
+              <input type="text" class="input" placeholder="Enter your email" />
+            </div>
           </div>
         </section>
         <section class="footer__brand">
@@ -88,6 +264,11 @@
         </section>
       </div>
     </footer>
+
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

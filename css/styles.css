@@ -1,11 +1,12 @@
 :root {
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
-  --color-accent: #ff3400;
+  --color-accent: #34a7b2;
   --color-headings: #1b0760;
   --color-body: #918ca4;
   --color-body-darker: #5c5577;
   --color-border: #ccc;
+  --color-nav: #e3a5a7;
   --border-radius: 30px;
 }
 
@@ -35,7 +36,7 @@ body {
 h1,
 h2,
 h3 {
-  color: var(--color-headings);
+  color: #34a7b2;
   margin-bottom: 1rem;
   line-height: 1.1;
 }
@@ -294,6 +295,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 .input-group .btn {
   margin: 4px;
@@ -503,6 +505,10 @@ a {
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .grid--1x4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 /*************************************************************** Testimonials ********************************************************/
@@ -620,7 +626,7 @@ a {
 /******************************************************** Blocks *******************************************************************/
 
 .block {
-  --padding-vertical: 6rem;
+  --padding-vertical: 1rem;
   padding: var(--padding-vertical) 2rem;
 }
 
@@ -638,6 +644,10 @@ a {
   color: #7b858b;
 }
 
+.block--accent {
+  background: var(--color-nav);
+}
+
 .block--light {
   background: #dcb6b6;
   color: rgb(39, 38, 38);
@@ -648,7 +658,7 @@ a {
 }
 
 .block--skewed-right {
-  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  padding-bottom: calc(var(--padding-vertical));
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
 }
 
@@ -705,7 +715,8 @@ a {
 }
 
 .nav__brand > img {
-  width: 400px;
+  width: 100%;
+  max-width: 150px;
 }
 
 @media screen and (min-width: 768px) {
@@ -788,7 +799,11 @@ a {
 /********************************************************* Plans Block *************************************************************/
 
 .block-plans .grid {
-  gap: 8rem 4rem;
+  gap: 4rem 1rem;
+}
+
+.block-plans__header {
+  text-align: center;
 }
 
 .block-plans .plan {
@@ -800,7 +815,11 @@ a {
 
 .feature {
   gap: 4rem 2rem;
-  margin: 12rem 0;
+  margin: 6rem auto;
+}
+
+.feature__content {
+  padding: 5rem;
 }
 
 .feature:first-of-type {
@@ -812,6 +831,15 @@ a {
 }
 
 .feature__image {
+  width: 100%;
+}
+
+.feature__image-1 {
+  width: 100%;
+  max-width: 200px;
+}
+
+.mealplan-img {
   width: 100%;
 }
 
@@ -845,7 +873,7 @@ a {
 /************************************************* Footer ***********************************************************************/
 
 .footer {
-  background: #232323;
+  background: var(--color-nav);
 }
 
 .footer a {
